@@ -1,0 +1,84 @@
+============================================================
+GUÍA DE COLUMNAS PARA EXCEL - SISTEMA DE INDICADORES REA
+
+NOTAS PARA LA DOCTORA:
+- Los valores Booleanos pueden escribirse como: True/False.
+- Si una columna no aplica a un paciente, dejar la celda VACÍA (No poner "0" ni "N/A" en fechas).
+- Es vital que el nombre de la columna en el Excel sea lo más parecido posible a estos nombres.
+============================================================
+
+A. DATOS GENERALES Y FECHAS (Formato Fecha: dd/mm/aaaa)
+------------------------------------------------------------
+1. Fecha Ingreso: Fecha del ingreso en UCI.
+2. Fecha Alta: Fecha de salida de la UCI.
+3. Reingreso 48: Booleano (True / False).
+4. Especialidad de Ingreso: Texto (Ej: Cardiología, Digestivo, Cirugía General).
+5. Ingreso por Urgencia: Booleano (True / False).
+6. Fallecimiento: Booleano (True / False).
+7. APACHE: Número entero (Puntuación de gravedad al ingreso).
+
+B. VENTILACIÓN MECÁNICA Y RESPIRATORIO
+------------------------------------------------------------
+8. VMI: Booleano (True / False) - Indica si tuvo Ventilación Mecánica Invasiva.
+9. Días VMI: Número decimal o entero - Días totales de soporte.
+10. Barotrauma: Booleano (True / False).
+11. Grados Inclinación: Número entero (0 a 90).
+12. Episodios NAV: Booleano (True / False).
+13. Registro Intubaciones: Fechas separadas por punto y comas (Ej: "14/10/2025; 18/10/2025").
+14. Extubación Programada: Booleano (True / False).
+15. Extubación por Maniobras: Booleano (True / False) - Retirada accidental.
+
+C. SEPSIS Y MONITORIZACIÓN HEMODINÁMICA
+------------------------------------------------------------
+16. Sepsis: Booleano (True / False).
+17. Shock Séptico: Booleano (True / False).
+18. PAM ingreso: Número entero - Presión Arterial Media al entrar.
+19. PAM 6h: Número entero - Presión Arterial Media a las 6 horas.
+20. PAM 24h: Número entero - Presión Arterial Media a las 24 horas.
+21. Diuresis Ingreso: Número decimal (ml/kg/h).
+22. Diuresis 6h: Número decimal (ml/kg/h).
+23. Diuresis 24h: Número decimal (ml/kg/h).
+24. Lactato Ingreso: Número decimal (mmol/L).
+25. Lactato 6h: Número decimal (mmol/L).
+26. Lactato 24h: Número decimal (mmol/L).
+
+D. INFECTOLOGÍA Y ANTIBIÓTICOS
+------------------------------------------------------------
+27. Tratamiento adecuado: Booleano (True / False).
+28. Cobertura empírica completa: Booleano (True / False).
+29. Resistencia antibióticos: Booleano (True / False).
+30. Número Episodios Bacteriemia: Número entero - Total de episodios sufridos. 
+31. Número total de días CVC: Número decimal - Total de días(puede o no tener decimales) con catéteres venosos centrales.
+
+E. SEDACIÓN Y MONITORIZACIÓN NEUROLÓGICA
+------------------------------------------------------------
+32. RASS: Número entero (-5 a +4).
+33. BIS: Número entero (0 a 100).
+34. RASS objetivo: Número entero (-5 a +4) - Valor prescrito por el médico.
+35. BIS objetivo: Número entero (0 a 100) - Valor prescrito por el médico.
+36. Ventana de sedación: Número entero o decimal de días - Interrupción diaria de sedación.
+
+F. NUTRICIÓN Y RIESGOS GASTROINTESTINALES
+------------------------------------------------------------
+37. Fecha Inicio NE: Fecha (dd/mm/aaaa) - Inicio de Nutrición Enteral.
+38. Omeprazol: Booleano (True / False) - Si recibe profilaxis gástrica.
+39. Tratamiento Corticoides: Booleano (True / False).
+40. Antecedentes Hemorragia GI: Booleano (True / False).
+41. Coagulopatía: Booleano (True / False).
+42. Insuficiencia Renal: Booleano (True / False).
+43. Insuficiencia Hepática: Booleano (True / False).
+
+G. SEGURIDAD Y OTROS CUIDADOS
+------------------------------------------------------------
+44. UPP: Booleano (True / False) - Presencia de Úlceras por Presión.
+45. Profilaxis TVP: Booleano (True / False).
+46. TVP: Booleano (True / False) - Trombosis Venosa Profunda confirmada.
+47. Glucemia: Número decimal/entero (mg/dl).
+48. Tratamiento Insulina: Booleano (True / False).
+49. Traslado Intrahospitalario: Booleano (True / False).
+50. Listado de verificación: Booleano (True / False) - Check-list de seguridad en traslado.
+51. Eventos Adversos Traslado: Booleano (True / False).
+52. Actos Transfusionales: Booleano (True / False).
+53. Sangrado Activo: Booleano (True / False).
+54. Cantidad Transfusión Dia: Número entero - Número de concentrados de hematíes.
+============================================================
